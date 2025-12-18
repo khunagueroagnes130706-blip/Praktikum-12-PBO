@@ -17,6 +17,7 @@ LOGGER = logging.getLogger('Checkout')
 # Model Sederhana
 @dataclass
 class Order:
+    """Mempresentasikan data pesanan pelanggan"""
     customer_name: str
     total_price: float
     status: str = "Open"
@@ -35,11 +36,13 @@ class INotificationService(ABC):
 
 # --- IMPLEMENTASI KONKRIT (Plug-in) ---
 class CreditCardProcessor(IPaymentProcessor):
+    "Method pembayaran menggunakan Kartu Kredit"
     def process(self, order: Order) -> bool:
         print("Payment: Memproses Kartu Kredit.")
         return True
     
 class EmailNotifier(INotificationService):
+    "Untuk mengirimi notifikasi pesanan pelanggan melalui email"
     def send(self, order: Order):
         print(f"Notif: Mengirim email konfirmasi ke {order.customer_name}.")
 
