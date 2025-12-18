@@ -14,9 +14,9 @@ Proyek ini mendemonstrasikan implementasi prinsip SOLID (SRP, OCP, DIP) pada sis
 2. Jalankan file utama dari terminal.
     
 
-'''bash
-python refactor_solid.py
-'''
+    '''bash
+    python refactor_solid.py
+    '''
 
 
 ### Studi Kasus Manajemen Karyawan (HR Management System)
