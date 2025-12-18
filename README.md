@@ -12,12 +12,12 @@ Proyek ini mendemonstrasikan implementasi prinsip SOLID (SRP, OCP, DIP) pada sis
 ### Cara menjalankan
 1. Pastikan Python 3.x terinstal.
 2. Jalankan file utama dari terminal.
-    '''bash
-    python refactor_solid.py
+    
+
+'''bash
+python refactor_solid.py
+'''
+
 
 ### Studi Kasus Manajemen Karyawan (HR Management System)
-Studi kasus ini cukup sederhana dan umum dimana HR dapat mengelola karyawannya dengan beberapa fitur dasar seperti:
-1. Menambahkan karyawan
-2. Menampilkan karyawan yang sudah ditambahkan
-3. Mengubah jabatan karyawan
-Tidak hanya fitur seperti di atas, konsep SOLID juga sudah diterapkan dengan sangat baik dan disertai LOGGING maupun docstring untuk membantu HR dan developer memonitoring aktivitas yang telah terjadi.
+Studi kasus ini cukup sederhana dan umum dimana HR dapat mengelola karyawannya dengan beberapa fitur dasar seperti: Menambahkan karyawan, Menampilkan karyawan yang sudah ditambahkan, Mengubah jabatan karyawan. Tidak hanya itu, konsep SOLID juga sudah diterapkan dengan sangat baik, disertai LOGGING maupun docstring untuk membantu HR maupun developer memonitoring aktivitas yang telah terjadi.
