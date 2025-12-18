@@ -36,13 +36,13 @@ class INotificationService(ABC):
 
 # --- IMPLEMENTASI KONKRIT (Plug-in) ---
 class CreditCardProcessor(IPaymentProcessor):
-    "Method pembayaran menggunakan Kartu Kredit"
+    """Method pembayaran menggunakan Kartu Kredit"""
     def process(self, order: Order) -> bool:
         print("Payment: Memproses Kartu Kredit.")
         return True
     
 class EmailNotifier(INotificationService):
-    "Untuk mengirimi notifikasi pesanan pelanggan melalui email"
+    """Untuk mengirimi notifikasi pesanan pelanggan melalui email"""
     def send(self, order: Order):
         print(f"Notif: Mengirim email konfirmasi ke {order.customer_name}.")
 
@@ -99,6 +99,7 @@ checkout_cc.run_checkout(andi_order)
 
 # 2. Pembuktian OCP: Menambah Metode Pembayaran QRIS (Tanpa Mengubah CheckoutService)
 class QrisProcessor(IPaymentProcessor):
+    """Method pembayaran menggunakan Qris"""
     def process(self, order: Order) -> bool:
         print("Payment: Memproses Qris.")
         return True
